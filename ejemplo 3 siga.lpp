@@ -1,0 +1,18 @@
+real base, altura, area
+caracter siga
+
+inicio
+    siga <-'S'
+    mientras (siga = 'S') o (siga = 's') haga
+        escriba "base? "
+        lea base
+        escriba "Altura? "
+        lea altura
+        area <- base * altura / 2
+        escriba "el area es ", area
+        llamar nueva_linea
+        escriba "desea continuar (S/N)?"
+        lea siga
+        llamar limpiar_pantalla
+    fin mientras 
+fin

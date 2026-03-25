@@ -1,0 +1,19 @@
+real  numero, suma 
+
+inicio
+    suma <- 0
+
+    escriba  "ingrese un numero: (0 para terminar) "
+    lea numero 
+    
+    mientras numero <> 0 haga 
+        suma <- suma + numero
+        
+        escriba "ingrecse un numero: (0 para terminar) "
+        lea numero 
+    fin mientras 
+    
+    escriba " el valor total acumulado es: ",suma     
+    
+     
+fin

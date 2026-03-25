@@ -1,0 +1,53 @@
+    entero codigo, n, i  
+    Cadena [25] nombre
+    real nota1, nota2, nota3, promedio  
+    Entero aprobados, reprobados  
+    Real suma, promedio_grupo  
+inicio    
+    aprobados <- 0
+    reprobados <- 0
+    suma <- 0
+    i <- 1
+    
+    Escriba "Cuantos alumnos desea ingresar? "
+    Lea n
+    
+    Mientras i <= n haga
+        
+        Escriba "Codigo:"
+        Lea codigo
+        
+        Escriba "Nombre:"
+        Lea nombre
+        
+        Escriba "Nota 1:"
+        Lea nota1
+        
+        Escriba "Nota 2:"
+        Lea nota2
+        
+        Escriba "Nota 3:"
+        Lea nota3
+        
+        promedio <- (nota1 + nota2 + nota3) / 3
+        
+        Escriba "Promedio: ", promedio
+        
+        Si promedio >= 60 Entonces
+            aprobados <- aprobados + 1
+        SiNo
+            reprobados <- reprobados + 1
+        Fin Si
+        
+        suma <- suma + promedio
+        i <- i + 1
+        
+    Fin Mientras
+    
+    promedio_grupo <- suma / n
+    
+    Escriba "Aprobados:  ", aprobados
+    Escriba "Reprobados: ", reprobados
+    Escriba "Promedio grupo: ", promedio_grupo
+    
+Fin

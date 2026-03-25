@@ -1,0 +1,14 @@
+entero numero, sumatoria
+
+inicio 
+    sumatoria <- 0
+    escriba "ingrese un numero: "
+    lea numero
+    mientras (numero >= 0) haga
+        sumatoria <- sumatoria + numero
+        escriba " ingrese un numero: "
+        lea numero
+    fin mientras 
+    escriba "sumatoria: ",sumatoria
+fin
+definir 

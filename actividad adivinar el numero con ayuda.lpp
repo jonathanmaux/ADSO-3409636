@@ -1,0 +1,19 @@
+entero numero_secreto, numero
+
+inicio
+    numero_secreto <- 50
+    
+    escriba "cual es el numero secreto? "
+    lea numero
+        mientras (numero_secreto <> numero) haga 
+            si (numero < numero_secreto) entonces
+            escriba "El numero secreto es mayor"
+            sino 
+            escriba "El numero secreto en menor"
+            fin si
+            llamar nueva_linea
+        escriba "cual es el numero secreto? "
+        lea numero
+    fin mientras  
+    escriba "Felicidades, adivino el numero"
+fin

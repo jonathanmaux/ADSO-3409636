@@ -1,0 +1,15 @@
+entero numero_secreto, numero
+
+inicio
+    numero_secreto <- 50
+    
+    escriba "cual es el numero secreto? "
+    lea numero
+        mientras (numero_secreto <> numero) haga 
+        escriba "cual es el numero secreto? "
+        lea numero
+    fin mientras  
+    escriba " felicidades, adivino el numero"
+    
+    
+fin

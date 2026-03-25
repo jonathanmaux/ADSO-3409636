@@ -1,0 +1,29 @@
+real valorCompra, descuento, totalPagar 
+caracter continuar
+inicio 
+    continuar <- 's'
+    
+    mientras continuar = 's' haga 
+        escriba "ingrese el valor de la compra: "
+        lea valorCompra 
+        
+        descuento <- 0
+    
+        si valorCompra > 1000 entonces
+            descuento <- valorCompra * 0.05
+        fin si
+        
+        totalPagar <- valorCompra - descuento
+    
+        escriba "valor de la compra: $ ",valorCompra
+        llamar nueva_linea
+        escriba "descuento aplica: $ ", descuento 
+        llamar nueva_linea
+        escriba "total a pagar: $ ", totalPagar
+        llamar nueva_linea
+
+        escriba "¿desea registrar una nueva compra?: (s/n) "
+        lea continuar 
+    fin mientras 
+    escriba "registro de compras finalizado."
+fin

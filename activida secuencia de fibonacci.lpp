@@ -1,0 +1,22 @@
+ 
+    entero numero, x, a, b, temporal 
+inicio    
+    Escriba "¿Cuántos términos deseas generar?"
+    Lea numero
+    
+    a <- 1
+    b <- 2
+    x <- 2
+    
+    Escriba "Secuencia de Fibonacci:"
+    
+    Mientras x <= numero haga
+        Escriba a
+        temporal <- a + b
+        llamar nueva_linea
+        a <- b
+        b <- temporal
+        x <- x + 1
+    Fin Mientras
+    
+Fin

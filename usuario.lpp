@@ -1,0 +1,27 @@
+Cadena[25] usuarioCorrecto, claveCorrecta, usuario, clave
+entero intentos
+
+inicio 
+    usuarioCorrecto <- "admin"
+    claveCorrecta <- "1234"
+    intentos <- 0
+
+    Mientras intentos < 3 Haga
+    llamar nueva_linea
+	Escriba "Ingrese usuario: "
+	Lea usuario
+	llamar nueva_linea
+	Escriba "Ingrese clave: "
+	Lea clave
+	
+	    Si (usuario = usuarioCorrecto) Y (clave = claveCorrecta) Entonces
+		    Escriba "Acceso concedido. Bienvenido, ", usuario
+		    intentos <- 4
+	    SiNo
+		   
+			Escriba "Datos incorrectos. Intente de nuevo."
+			intentos <- intentos + 1
+	    Fin Si
+    fin mientras 
+   
+Fin

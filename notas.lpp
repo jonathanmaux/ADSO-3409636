@@ -1,0 +1,19 @@
+real nota1, nota2, nota3, promedio
+
+Inicio
+        
+    Escriba "Ingrese nota 1:"
+    Lea nota1
+    Escriba "Ingrese nota 2:"
+    Lea nota2
+    Escriba "Ingrese nota 3:"
+    Lea nota3
+    
+    promedio <- (nota1 + nota2 + nota3) / 3
+    
+    Si promedio >= 3.5 Entonces
+        Escriba "Aprueba con: ", promedio
+    SiNo
+        Escriba "Reprueba con: ", promedio
+    Fin Si
+Fin

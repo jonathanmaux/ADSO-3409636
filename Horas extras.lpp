@@ -1,0 +1,43 @@
+cadena [20] nombre
+real horasTrabajadas, tarifaHora 
+real horasExtras, pagoExtras, salarioTotal
+Entero i, cantidad_trabajadores
+
+inicio
+Escriba "¿Cuantos trabajadores desea registrar? "
+  Lea cantidad_trabajadores
+
+  i <- 1
+  Mientras i <= cantidad_trabajadores Haga
+    Escriba "=== Trabajador ", i, " ==="
+    Escriba "Ingrese nombre del trabajador: "
+    Lea nombre
+    Escriba "Ingrese horas trabajadas en la semana: "
+    Lea horasTrabajadas
+    Escriba "Ingrese tarifa por hora: "
+    Lea tarifaHora
+
+    Si horasTrabajadas > 40 Entonces
+      horasExtras <- horasTrabajadas - 40
+      pagoExtras  <- horasExtras * (tarifaHora * 1.5)
+    SiNo
+      horasExtras <- 0
+      pagoExtras  <- 0
+    Fin Si
+
+    salarioTotal <- (40 * tarifaHora) + pagoExtras
+
+    Escriba "--- Resultados ---"
+    Escriba "Trabajador     : ", nombre
+    llamar nueva_linea
+    Escriba "Horas extras   : ", horasExtras
+    llamar nueva_linea
+    Escriba "Pago por extras: $", pagoExtras
+    llamar nueva_linea
+    Escriba "Salario total  : $", salarioTotal
+    llamar nueva_linea
+
+    i <- i + 1
+  Fin Mientras
+
+Fin
